@@ -40,6 +40,15 @@ async def on_message(message):
       
     await message.channel.send("LTC price is " + price + " $")
 
+  if message.content.startswith('$xrp'):
+    response_API = requests.get('https://api.binance.com/api/v3/avgPrice?symbol=XRPUSDT')
+    data = response_API.text
+    parse_json = json.loads(data)
+    price = parse_json['price']
+    print("XRP price:",price)
+    
+    await message.channel.send("XRP price is " + price + " $")
+
   if message.content.startswith('$bch'):
     response_API = requests.get('https://api.binance.com/api/v3/avgPrice?symbol=BCHUSDT')
     data = response_API.text
