@@ -6,8 +6,11 @@ to setup simply install request and discord.py and change the TOKEN variable to 
 commands :
 
 $btc - shows the live price of bitcoin
+
 $eth - shows the live price of ethereum
+
 $ltc - shows the live price of litecoin
+
 $bch - shows the live price of bitcoin-cash
 
 
