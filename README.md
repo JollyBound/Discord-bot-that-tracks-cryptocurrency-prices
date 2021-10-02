@@ -16,7 +16,7 @@ $bch - shows the live price of bitcoin-cash
 
 $xrp - shows the live price of Ripple
 
-$ADA - shows the live price of Cardano
+$ada - shows the live price of Cardano
 
 $bnb - shows the live price of Binance Coin
 
