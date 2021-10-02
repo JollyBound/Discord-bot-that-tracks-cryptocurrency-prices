@@ -3,8 +3,6 @@ import os
 import requests
 import json
 import time
-from keep_alive import keep_alive
-client = discord.Client()
 
 @client.event
 async def on_ready():
@@ -52,6 +50,6 @@ async def on_message(message):
     await message.channel.send("BCH price is " + price + " $")
 
 
-keep_alive()
+TOKEN = ("YOUR TOKEN")
 
-client.run(os.getenv('TOKEN'))
+client.run(TOKEN)
