@@ -3,6 +3,7 @@ Discord bot that tracks the live price of chosen cryptocurrencies, using discord
 
 to setup simply install request and discord.py and change the TOKEN variable to your bot's token.
 
+
 commands :
 
 $btc - shows the live price of bitcoin
