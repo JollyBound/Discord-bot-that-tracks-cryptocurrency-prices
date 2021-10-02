@@ -39,14 +39,14 @@ async def on_message(message):
     print("LTC price:",price)
       
     await message.channel.send("LTC price is " + price + " $")
-
+    
   if message.content.startswith('$xrp'):
     response_API = requests.get('https://api.binance.com/api/v3/avgPrice?symbol=XRPUSDT')
     data = response_API.text
     parse_json = json.loads(data)
     price = parse_json['price']
     print("XRP price:",price)
-    
+      
     await message.channel.send("XRP price is " + price + " $")
 
   if message.content.startswith('$bch'):
@@ -58,6 +58,23 @@ async def on_message(message):
       
     await message.channel.send("BCH price is " + price + " $")
 
+  if message.content.startswith('$ada'):
+    response_API = requests.get('https://api.binance.com/api/v3/avgPrice?symbol=ADAUSDT')
+    data = response_API.text
+    parse_json = json.loads(data)
+    price = parse_json['price']
+    print("ADA price:",price)
+      
+    await message.channel.send("ADA price is " + price + " $")
+    
+  if message.content.startswith('$bnb'):
+    response_API = requests.get('https://api.binance.com/api/v3/avgPrice?symbol=BNBUSDT')
+    data = response_API.text
+    parse_json = json.loads(data)
+    price = parse_json['price']
+    print("BNB price:",price)
+      
+    await message.channel.send("BNB price is " + price + " $")
 
 TOKEN = ("YOUR TOKEN")
 
