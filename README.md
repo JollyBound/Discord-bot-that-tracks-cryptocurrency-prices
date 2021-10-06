@@ -1,4 +1,4 @@
-# Discord-bot-that-tracks-cryptocurrency-prices
+-cryptocurrency-prices-discord-bot
 Discord bot that tracks the live price of chosen cryptocurrencies, using discord.py and Binance's API,
 
 to setup simply install requests and discord.py and change the TOKEN variable (line 79) to your bot's token.
